@@ -5,15 +5,20 @@ body {
 }
 
 .navbar {
-    background-color:orange;
-    padding: 0;
-
+    background-color:rgb(0, 123, 255);
+    padding: 5px;
+    color: white;
     display: flex;
     justify-content: space-between;
 }
 
-.navbar *{
-    margin: 5px;
+.navbar h2{
+    color: white;
+    margin-left: 15px;
+}
+
+.navbar a{
+    color: white;
 }
 
 .logo {
@@ -22,6 +27,7 @@ body {
 
 .page_links {
     display: flex;
+    margin-right: 20px;
 }
 .project_image {
     width: 100px;
@@ -38,21 +44,17 @@ body {
     margin: 20px;
 }
 .projects_section:hover {
-color: orange;
+color: rgb(0, 191, 255);
 }
 .all_projects {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-.class-container {
-    height: 200px; display: flex; flex-direction: column; justify-content: center; align-items: center; background-color: lightpink;
-}
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
     background-color: transparent;
-    width: 300px;
     height: 200px;
     border: 1px solid #f1f1f1;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
@@ -84,8 +86,12 @@ color: orange;
   
   /* Style the front side (fallback if image is missing) */
   .flip-card-front {
-    background-color: #bbb;
+    background-color: rgb(144, 238, 225);
     color: black;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
   }
   
   /* Style the back side */
@@ -93,4 +99,8 @@ color: orange;
     background-color: dodgerblue;
     color: white;
     transform: rotateY(180deg);
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
   }
